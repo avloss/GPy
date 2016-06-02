@@ -14,7 +14,7 @@ try:
     import pycuda.autoinit
     gpu_initialized = True
 except:
-    pass
+    raise Exception("couldn't initialize GPU in gpu_init.py")
 
 # def initGPU():
 #     try:
